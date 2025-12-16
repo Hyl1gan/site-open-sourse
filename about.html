@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВІДКРИТЕ ПРОГРАМНЕ ЗАБЕЗПЕЧЕННЯ (OPEN SOURCE): ІСТОРІЯ ТА ФІЛОСОФІЯ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Навігація -->
+<nav class="navbar">
+    <div class="logo">Clash Royale team</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html" class="active">About us</a></li>
+    </ul>
+
+</nav>
+
+<!-- about us -->
+<section class="about-section">
+    <h1 class="about-title">CEO</h1>
+
+    <div class="about-container">
+        <div class="about-img">
+            <img src="img/ghoul.png" alt="Profile">
+        </div>
+
+        <div class="about-info">
+            <h2>Наливайчук Олег</h2>
+            <p>Старий, перспективний чоловік, головний фанат Жупанського роль якого була створити сайт</p>
+
+            <div class="skills-box">
+                <div class="skill"><span>SEX</span><span>MEN</span></div>
+                <div class="skill"><span>IMPACT</span><span>25%</span></div>
+            </div>
+            <div class="audio-box">
+                <button class="audio-btn" onclick="toggleAudio(this)">▶ Слухати</button>
+
+                <audio class="audio-file">
+                <source src="audio/OLEG.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+        </div>
+    </div>
+
+    <h1 class="about-title">Represent</h1>
+
+    <div class="about-container">
+        <div class="about-img">
+            <img src="img/rostyk.jpg" alt="Profile">
+        </div>
+
+        <div class="about-info">
+            <h2>Андрусяк Ростислав</h2>
+            <p>Пацик из Слобади, любит Павлюка, він представляв цей шедевер та підтримував дух команди</p>
+
+            <div class="skills-box">
+                <div class="skill"><span>SEX</span><span>MEN</span></div>
+                <div class="skill"><span>IMPACT</span><span>25%</span></div>
+            </div>
+            <div class="audio-box">
+                <button class="audio-btn" onclick="toggleAudio(this)">▶ Слухати</button>
+
+                <audio class="audio-file">
+                <source src="audio/ROSTYK.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+        </div>
+    </div>
+
+    <h1 class="about-title">Style Creator</h1>
+
+    <div class="about-container">
+        <div class="about-img">
+            <img src="img/kuroko.png" alt="Profile">
+        </div>
+
+        <div class="about-info">
+            <h2>Панчак Ігор</h2>
+            <p>Пацанчик тоже из Слободи, але він любить Жупанського, в нтого була роль розробити дизайн сайту</p>
+
+            <div class="skills-box">
+                <div class="skill"><span>SEX</span><span>MEN</span></div>
+                <div class="skill"><span>IMPACT</span><span>25%</span></div>
+            </div>
+            <div class="audio-box">
+                <button class="audio-btn" onclick="toggleAudio(this)">▶ Слухати</button>
+
+                <audio class="audio-file">
+                <source src="audio/IGOR.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+        </div>
+    </div>
+
+    <h1 class="about-title">Test and fixes</h1>
+
+    <div class="about-container">
+        <div class="about-img">
+            <img src="img/sloboda.png" alt="Profile">
+        </div>
+
+        <div class="about-info">
+            <h2>Скрипник Єгорчик</h2>
+            <p>Ойойо, про цього дуже молодого чоловіка можна розказати дуже багато чого, але головне що він тестував цей сайт та виправляй дрібниці</p>
+
+            <div class="skills-box">
+                <div class="skill"><span>SEX</span><span>MEN</span></div>
+                <div class="skill"><span>IMPACT</span><span>25%</span></div>
+            </div>
+            <div class="audio-box">
+                <button class="audio-btn" onclick="toggleAudio(this)">▶ Слухати</button>
+
+                <audio class="audio-file">
+                <source src="audio/EGOR.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+function toggleAudio(btn){
+    const audio = btn.parentElement.querySelector(".audio-file");
+
+    if(audio.paused){
+        audio.play();
+        btn.innerText = "⏸ Pause";
+        btn.classList.add("playing");
+    }else{
+        audio.pause();
+        btn.innerText = "▶ Play";
+        btn.classList.remove("playing");
+    }
+}
+</script>
+
+
+<!-- footer -->
+<footer class="footer">
+
+    <div class="footer-line"></div>  
+    <div class="footer-fedback">
+
+        <div class="logo">
+        <h2>Clash Royale team</h2>
+        <p>Майбутнє Open Source: Тренди та інновації</p>
+    </div>
+
+    <div class="about">
+        <h2>About us</h2>
+        <ul>
+            <li>Oleh Nalyvaichuk</li>
+            <li>Rostyslav Andrusiak</li>
+            <li>Igor Panchak</li>
+            <li>Egor Skrypnyk</li>
+      </ul>
+    </div>
+
+    <div class="links">
+        <h2>Social media</h2>
+        <div class="img-box2"><a href="https://www.instagram.com/clashroyale/" target="_blank"><div class="press"><img src="img/Instagram.png" alt=""></div></a></div>
+        <div class="img-box2"><a href="https://www.facebook.com/ClashRoyale/" target="_blank"><div class="press"><img src="img/facebook.png" alt=""></div></a></div>
+        <div class="img-box2"> <a href="https://x.com/ClashRoyale" target="_blank"><div class="press"><img src="img/xlogo.png" alt=""></div></a></div>
+        <p>Або якщо вас щось дуже сильно зацікавило, ви можете зателефонувати за номером:</p>
+        <p>+380 256 28 666 1</p>
+        <p>+(03433) 4 77 26 (Якщо попередній непрацює)</p>
+        </div>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <p class="copyright">Clash Royale team 2025 KPFK NU LVIV POLITECH RECORDING###</p>
+</footer>
+</body>
+</html>
